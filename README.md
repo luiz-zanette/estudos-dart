@@ -15,5 +15,5 @@ Este é o meu hub de pós-estudo. Após concluir os projetos guiados, utilizo es
 
 ## 🗂️ Organização do Repositório:
 
- - Outras branches: Projetos estruturados de cursos com base em cronogramas.
- - apps_aleatorios: Prática livre, autonomia e experimentação contínua.
+ - **Outras branches:** Projetos estruturados de cursos com base em cronogramas.
+ - **apps_aleatorios:** Prática livre, autonomia e experimentação contínua.
