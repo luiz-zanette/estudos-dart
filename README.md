@@ -34,6 +34,9 @@ git checkout projetos_gerais
 # Para ver o App de Notas
 git checkout app_notas
 
+# Para ver o App de Banco
+git checkout app_banco
+
 # Para ver o Laboratório de Apps Aleatórios
 git checkout laboratorio
 
