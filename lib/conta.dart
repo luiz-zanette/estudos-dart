@@ -24,3 +24,33 @@ void imprimeSaldo () {
   print("Saldo da conta de $titular: R\$ $_saldo"); // imprime o saldo da conta
 }
 }
+
+class ContaPoupanca extends Conta { // classe filha que herda da classe Conta
+  double taxaJuros = 0.05; // atributo específico da classe ContaPoupanca
+
+  ContaPoupanca(String titular, double saldo) : super(titular, saldo); // construtor da classe ContaPoupanca que chama o construtor da classe Conta
+
+void aplicarJuros (){
+  double juros = _saldo * taxaJuros; // calcula os juros
+  _saldo += juros; // adiciona os juros ao saldo da conta
+  print("Juros de R\$ $juros aplicados na conta de $titular");
+  imprimeSaldo(); // chama o método para imprimir o saldo atualizado da conta
+}
+}
+
+class ContaCorrente extends Conta { // classe filha que herda da classe Conta
+  double emprestimo = 300;
+
+  ContaCorrente(String titular, double saldo) : super(titular, saldo);
+
+  @override
+  void pagar(double valor) {
+    if (_saldo + emprestimo >= valor) {
+      _saldo -= valor;
+      print("Pagamento de R\$ $valor realizado com sucesso na conta de $titular!");
+      imprimeSaldo();
+    } else {
+      print("Saldo insuficiente para pagar R\$ $valor, mesmo com o empréstimo disponível (R\$ $emprestimo).");
+    }
+  }
+}
