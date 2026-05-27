@@ -11,9 +11,10 @@ Este repositório utiliza múltiplas branches para organizar diferentes fases do
 Estas branches - nomeadas com o nome da própria aplicação - contêm aplicações desenvolvidas seguindo cronogramas e aulas de cursos específicos:
 
 * **`main`**: Ponto central de documentação e expliações da organização do repositório;
-* **`projetos_gerais`**: Coleção de exercícios, algoritmos e mini-aplicativos desenvolvidos como parte da ementa do curso para fixação de lógica em Dart.
+* **`app_banco`**: Mini aplicativo de função bancária desenvolvido durante o curso;
 * **`app_notas`**: Aplicativo de notas / lembretes desenvolvida passo a passo durante o curso;
 * **`laboratorio`**: Meu "playground" pessoal. Aqui aplico o conhecimento de forma independente, testo lógicas novas e crio mini-apps fora do currículo dos cursos.
+* **`projetos_gerais`**: Coleção de exercícios, algoritmos e mini-aplicativos desenvolvidos como parte da ementa do curso para fixação de lógica em Dart.
 
 ## 🚀 Principais Tecnologias
 
@@ -28,17 +29,20 @@ Estas branches - nomeadas com o nome da própria aplicação - contêm aplicaç�
 Para visualizar o código de um projeto específico, altere a branch no seletor do GitHub ou utilize os comandos:
 
 ```bash
-# Para ver os projetos projetos_gerais
-git checkout projetos_gerais
+# Para ver o App de Banco
+git checkout app_banco
 
 # Para ver o App de Notas
 git checkout app_notas
 
-# Para ver o App de Banco
-git checkout app_banco
-
 # Para ver o Laboratório de Apps Aleatórios
 git checkout laboratorio
+
+# Para ver os projetos projetos_gerais
+git checkout projetos_gerais
+
+
+
 
 
 
